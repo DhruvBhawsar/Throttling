@@ -37,16 +37,5 @@ const throttle=(fn,delay)=>{
         return fn(...args)
     }
 }
-
-
-    // function toggler(func, delay) {
-    //     if (timerId) {
-    //         return
-    //     }
-    //     timerId = setTimeout(function () {
-    //         func()
-    //         timerId = undefined;
-    //     }, delay)
-    // }
     document.getElementById('btn').addEventListener('click',throttle(tog,2000))  
 </script>
